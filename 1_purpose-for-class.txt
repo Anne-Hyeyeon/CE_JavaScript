@@ -1,0 +1,27 @@
+1. 수업의 목적
+
+
+<input type="button" value "night" onclick="
+document.querySelector('body').style.backgroundColor='black';
+document.querySelector('body').style.color='white';
+">
+
+
+- JS의 가장 큰 목적은 웹페이지와 사용자를 상호작용하게 만들어 주는 것.
+ex) 사용자가 웹페이지에서 'night'버튼을 눌렀을 때 웹페이지는 야간 모드로 변함. 'day'버튼을 누르면 보통 모드로 변함.
+- 웹브라우저 : 한번 정보가 화면에 출력되면, 그 다음부터는 자기 자신을 바꿀 수 있는 능력이 없다. <-이걸 가능하게 해 주는 게 JS
+- 검사(inspect) 중 Elements : tag 
+night 버튼을 누르면 body태그가 바뀜.
+- onclink의 속성으로 자바스크립트가 와야 한다.
+- onclink의 속성으로 documnet.querySelector('body').style.backgroundColor='black'같은 자바스크립트를 넣어 주면, 
+사용자가 onclink속성이 있는 버튼을 누를 경우 해당 자바스크립트가 실행이 된다.
+- style속성값으로는 반드시 css가 온다.
+(css는 디자인에 최적화되어있는 언어이다.)
+
+
+*정리*
+1) JS는 사용자와의 상호작용을 담당하는 언어이다.
+2) 웹브라우저는 한번 출력이 되면 자기 자신을 바꿀 수 없다.
+but, 자바스크립트를 통해 바꿀 수 있다.
+따라서 '자바스크립트는 html을 제어하는 언어다.'라는 정의를 내릴 수 있다.
+이러한 특성이 웹페이지를 훨씬 더 동적으로 만들어 준다.

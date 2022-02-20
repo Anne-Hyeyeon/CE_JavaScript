@@ -1,0 +1,7 @@
+*javascript select tag by css selector 구글링 MDN 문서 참고*
+documnet.querySelector('.myclass');
+class명이 myclass인 태그를 모두 선택하게 하는 선택자.
+
+*javascript backgroundColor change 구글링*
+document.body.style.backgroundColor="red"; 
+검색결과 나옴. html 태그로는 background-color인데, js에서는 backgroundColor가 됨!
