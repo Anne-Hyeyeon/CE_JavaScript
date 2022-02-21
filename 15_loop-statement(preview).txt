@@ -1,0 +1,15 @@
+반복문 예고
+
+it(this.value === 'night') {
+var links = document.querySelectorAll('a');
+var i = 0;
+while(i<links.length){
+    links[i].style.color='powderblue';
+    i=i+1;
+}
+
+night 버튼을 눌렀을 때, 웹페이지의 모든 링크 (a) 색깔을 바꾸는 자바스크립트
+
+다음 시간부터 살펴볼 js의 기능
+1. 배열
+2. 배열을 이용한 반복문
