@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+     <title></title>
+</head>
+<body>
+   <h1>Object</h1>
+   <h2>Create</h2>
+   <script>
+    //    배열은 대괄호, 객체는 중괄호로!
+       var coworkers = {
+           "공주":"혜연",
+           "밍밍":"민재"
+       };
+    //    혜연을 공주라는 딱지를 붙여서, 민재를 밍밍이라는 딱지를 붙여서 저장한 것.
+       document.write("공주 : "+coworkers.공주+"<br>");
+    //    여기서 . 은 객체에 접근하는 오퍼레이터
+    document.write("밍밍 : "+coworkers.밍밍+"<br>");
+    coworkers.princess = "혜연이";
+    document.write("princess : "+coworkers.princess+"<br>")
+    // 객체에서 이름에는 공백을 넣을 수 없다. 대괄호를 쓰고 그 안에 ""로 문자를 써줘야 한다.
+    coworkers["princess boyfriend"] = "밍밍이";
+    document.write("공주 남친 : "+coworkers["princess boyfriend"]+"<br>")
+   </script>
+</body>
+</html>

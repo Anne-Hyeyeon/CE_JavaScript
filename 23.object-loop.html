@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+     <title></title>
+</head>
+<body>
+   <h1>Object</h1>
+   <h2>Create</h2>
+   <script>
+    //    배열은 대괄호, 객체는 중괄호로!
+       var coworkers = {
+           "공주":"혜연",
+           "밍밍":"민재"
+       };
+    //    혜연을 공주라는 딱지를 붙여서, 민재를 밍밍이라는 딱지를 붙여서 저장한 것.
+       document.write("공주 : "+coworkers.공주+"<br>");
+    //    여기서 . 은 객체에 접근하는 오퍼레이터
+    document.write("밍밍 : "+coworkers.밍밍+"<br>");
+    coworkers.princess = "혜연이";
+    document.write("princess : "+coworkers.princess+"<br>")
+    // 객체에서 이름에는 공백을 넣을 수 없다. 대괄호를 쓰고 그 안에 ""로 문자를 써줘야 한다.
+    coworkers["princess boyfriend"] = "밍밍이";
+    document.write("공주 남친 : "+coworkers["princess boyfriend"]+"<br>")
+   </script>
+
+   <h2>Iterate</h2>
+   <script>
+      for(var key in coworkers) {
+         // for-> coworkers라는 변수가 가리키는 객체에 있는 key값들을 가져오는 반복문
+         // key값이란? 위에 있는 것 중 공주, 밍밍, princess 등
+         // key값은 정보에 도달할 수 있는 열쇠.
+         // 배열은 index라는 표현을 쓴다.
+         // coworkers에 있는 데이터의 수만큼 중괄호의 코드들이 실행이 된다. 
+         // 실행될때마다 key값이 하나하나 변수값으로 세팅됨.
+         document.write(key+' : '+coworkers[key]+'<br>');
+       
+      }
+   </script>
+</body>
+</html>

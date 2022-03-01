@@ -1,0 +1,35 @@
+[반복문과 배열의 활용]
+
+- console에서 document.querySelector('a') 명령을 내렸을 때 가져오는 건 맨 첫번째 a이다.
+(맨 첫번째에 등장하는 태그만 가져오는 명령이기 때문)
+
+- Google에서 javascript get element by css selector multiple 검색
+-> 검색결과 document.querySelectorAll이 나온다.
+-> 문법을 공부해본다! 후후
+
+- querySelectorAll의 결과값으로 배열이 뜬다.
+- 이렇게 만들어진 결과를 변수 alist에 담아본다.
+var alist = document.querySelectorAll('a');
+console.log(alist[0]);
+console.log(alist[1]);
+의 명령을 내려본다. 
+
+console.log(alist.length); 는 a의 개수를 찾아준다.
+
+
+콘솔에 다음과 같이 입력
+
+var alist = document.querySelectorAll('a'); 
+var i = 0;
+while(i < alist.length){
+    console.log(alist[i]);
+    i = i + 1;
+}
+
+var alist = document.querySelectorAll('a'); 
+var i = 0;
+while(i < alist.length){
+    console.log(alist[i]);
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // 여기서 self 가 먹히지 않는 이유 -> this는 속해있는 태그의 값을 바꾸는 건데, script로 떨어지면 동작하지 않게 된다.
+        // 여기서는 원래 input을 가리키는 거였다.
+        // self : 매개변수(파라미터) / this : argument(이벤트 포함 태그를 가리킴)    
+        // 함수에 다양한 값의 argument를 넣어야 하는 경우 매개변수 이름을 부여해주면 된다
+        
+    function nightDayHandler(self) {
+        var target = document.querySelector('body');
+        if(self.value === 'night') { 
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            self.value = 'day';
+
+            var alist = document.querySelectorAll('a'); 
+            var i = 0;
+
+            while(i < alist.length){
+            console.log(alist[i]);
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+            }
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            self.value = 'night';
+
+            var alist = document.querySelectorAll('a'); 
+            var i = 0;
+
+            while(i < alist.length){
+            console.log(alist[i]);
+            alist[i].style.color = 'pink';
+            i = i + 1;
+            }
+        }
+    }
+    </script>
+    <title></title>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+
+    <input type="button" value="night" onclick="
+    nightDayHandler(this)
+   ">
+
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>JavaScript</h2>
+  <p>
+    JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+  </p>
+
+    <input type="button" value="night" onclick="
+        nightDayHandler(this)
+   ">
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <script>
+        var coworkers = ['김혜연','김민재','김지현','김경아'];
+        // 배열에서 각각의 요소를 원소, element라고 한다.
+        // 김혜연은 0번째, 김민재는 첫번째, 김지현은 두번째, 김경아는 세번째
+    </script>
+    <h2>My coworkers</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while(i < 4){
+            document.write('<li>'+coworkers[i]+'</li>');
+            i = i + 1;
+            }
+            // 이렇게 하면 요소가 늘어났을 때, 데이터가 바뀌었을 때 로직을 바꿔줘야 한다. 바뀐 데이터에 따라 유연하게 바뀌게 하려면 어떻게 해야할까?
+        </script>
+    </ul>
+
+
+    <script>
+        var coworkers = ['김혜연','김민재','김지현','김경아','김현숙'];
+    </script>
+    <h2>My coworkers</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while(i < coworkers.length){
+            document.write('<li>'+coworkers[i]+'</li>');
+            i = i + 1;
+            }
+            // 해결방법 : while에다가 숫자를 직접 넣지 말고, 변수의 개수가 카운팅되게 한다.
+        </script>
+    </ul>
+
+    <script>
+        var coworkers = ['김혜연','김민재','김지현','김경아','김현숙'];
+
+    </script>
+    <h2>My coworkers</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while(i < coworkers.length){
+            document.write('<li><a href="https://naver.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+            i = i + 1;
+            }
+            // 링크에도 적용 가능하다! 이럴 때 연결되는 링크는 naver.com/뒤 각각의 요소
+        </script>
+    </ul>
+</body>
+</html>
